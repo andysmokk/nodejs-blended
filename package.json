@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-blended",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andysmokk/nodejs-blended.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andysmokk/nodejs-blended/issues"
+  },
+  "homepage": "https://github.com/andysmokk/nodejs-blended#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
