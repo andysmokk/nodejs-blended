@@ -1,6 +1,6 @@
 // require("./calculator-basic");
 // require("./calc/index");
-const { calcOOP } = require("./calcOop");
-console.log(calcOOP);
+const { calcOop } = require("./calcOop");
+console.log(calcOop);
 
 // console.log("Hola mundo?");
