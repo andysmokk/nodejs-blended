@@ -1,4 +1,9 @@
 class Calculator {
+  constructor(operation, numbers) {
+    this.operation = operation;
+    this.numbers = numbers;
+  }
+
   sum = (operation, numbers) => {
     if (operation === "sum") {
       let result = numbers.reduce((acc, el) => {
@@ -65,6 +70,13 @@ class Calculator {
         console.log("Unknown operation type");
     }
   };
+
+  init = () => {
+    this.actionHandler(this.operation, this.numbers);
+  };
 }
 
-module.exports = Calculator;
+const [operation, ...numbers] = process.argv.slice(2);
+const arrOfNumbers = numbers.map((number) => Number(number));
+
+module.exports = new Calculator(operation, arrOfNumbers);
